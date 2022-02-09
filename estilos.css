@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  background-color: whitesmoke;
+}
+header{
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;  
+}
+header:hover{
+  background-image: linear-gradient(orange, whitesmoke);
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+li{
+  list-style: none;
+  display: flex;
+  margin: 10px;
+}
+a:hover{
+  transform: scale(1.05);
+  font-size: 20px;
+  color: black;
+}    
+a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  color: black;
+}
+
+.logo{
+  height: 100px;
+  width: 20%;
+  background-image: url(https://www.arcor.com/ar/dist/images/logos/logo-grupo-arcor.png);
+  background-repeat: no-repeat;
+}
+
+h2{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+p{
+  margin: 10px;
+  text-transform: capitalize;
+  font-size: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient( whitesmoke, orange);
+}
+.pfoot{
+  font-size: 15px;
+  font-family: monospace;
+}
+img{
+  width: 10%;
+}
+.secubi{
+  margin: 30px 0 30px 0 ;
+  display:flex;
+  color: black;
+  background-image:linear-gradient(whitesmoke, orange, whitesmoke);
+}
+.mapubi{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+iframe{
+  border-radius: 15px;
+  border: 3px solid black;
+}
+.h2-contact{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+  text-transform: capitalize;
+}
+.divform{
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.form{
+  width: 40%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(whitesmoke, orange, whitesmoke);
+  border-radius: 10px;
+ }
+
+.form input{
+  width: 95%;
+  height: 30px;
+  margin: .5rem;
+  border-radius: 5px;
+}
+.button{
+  padding: 30px;
+}
+.izq{
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  
+}
+.der{
+  display: inline-block;
+  height: 30px;
+  width: 60px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+textarea{
+  resize: none;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.containerserv{
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-areas: 
+       "imgv-1 textv-1"
+       "textpr-1 imgpr-1 " 
+       "imge-1 texte-1"
+}
+  .imgv-1{ grid-area: imgv-1;
+    display: flex;
+    background-image: url(./img/venta.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .textv-1{ grid-area: textv-1;
+    display: grid;
+    grid-template-rows: 15%;
+    margin-top: 100px;
+  }
+  .imgpr-1{ grid-area: imgpr-1;
+    display: flex;
+    background-image: url(./img/promocion.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .textpr-1{ grid-area: textpr-1;
+    display: grid;
+    grid-template-rows: 15%;
+    margin-top: 100px;   
+  }
+
+
+  .imge-1{ grid-area: imge-1;
+    display: flex;
+    background-image: url(./img/entrega.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .texte-1{ grid-area: texte-1;
+    display: grid;
+    grid-template-rows: 15%;
+    margin-top: 100px;
+  }
+  .textpr-1:hover, .textv-1:hover, .texte-1:hover{
+    transition: 0.5s;
+    transform:scale(1.05);
+
+  }
+
+
+.container {  display: grid;
+
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 400px 400px 400px;
+  grid-template-areas:
+    "image-1 text-1"
+    "text-2 image-2"
+    "image-3 text-3"
+  }
+  .image-1 { grid-area: image-1;
+  display: grid;
+  background-image: url(https://www.cronista.com/files/image/321/321026/6026d1339d85e.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  }
+
+  .text-1 { grid-area: text-1;
+    display: grid;
+    border-radius: 50%;
+  
+  }
+
+  .text-2 { grid-area: text-2;
+    display: grid;
+    display: grid;
+   border-radius: 50%;
+  }
+
+  .image-2 { grid-area: image-2;
+  background-image: url(https://www.arcor.com/ar/dist/images/nuestra_filosofia/pict_item-2.jpg);
+  display: grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  }
+
+  .image-3 { grid-area: image-3;
+  background-image: url(https://www.arcor.com/ar/dist/images/rrhh/rrhh_pict04.jpg);
+  display: grid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  }
+
+  .text-3 { grid-area: text-3;
+  display: grid;
+  border-radius: 50%;
+  }
+
+   .text-1:hover, .text-2:hover, .text-3:hover{
+   border-radius: 50%;
+   transition: 0.6s;
+   transform: scale(1.03);
+   }
+  .text-h2{
+   display: flex;
+     justify-content: center;
+     align-items: flex-end;
+    }
+
+.containerp {  display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px 400px 400px 400px;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "imagep-1 textp-1"
+      "textp-2 imagep-2"
+      "imagep-3 textp-3"
+      "textp-4 imagep-4"
+      "imagep-5 textp-5"
+
+  }
+  
+  .imagep-1 { grid-area: imagep-1;
+    background-image: url(img/pic_alimentos.jpg);
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+  }
+  
+  .textp-1 { grid-area: textp-1; 
+    display: grid;
+    grid-template-rows: 15%;
+    margin-top: 100px;
+
+  }
+  
+  .textp-2 { grid-area: textp-2;
+    display: grid;
+    grid-template-rows: 15%;
+    margin-top: 100px;
+  }
+  
+  .imagep-2 { grid-area: imagep-2;
+    background-image: url(img/pic_chocolates.jpg);
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+  }
+  
+  .imagep-3 { grid-area: imagep-3; 
+    background-image: url(img/pic_galletas2.jpg);
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+
+  }
+  
+  .textp-3 { grid-area: textp-3;
+    display: grid;
+    grid-template-rows: 15%;
+    margin-top: 100px;
+  }
+  
+  .textp-4 { grid-area: textp-4; 
+    display: grid;
+    grid-template-rows: 15%;
+    margin-top: 100px;
+  }
+  .imagep-4 { grid-area: imagep-4; 
+    background-image: url(img/pic_golosinas.jpg);
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .imagep-5 { grid-area: imagep-5;
+    background-image: url(img/pic_helados2.jpg);
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .textp-5 { grid-area: textp-5;
+    display: grid;
+    grid-template-rows: 15%;
+    margin-top: 100px;
+  }  
+  
+  .textp-1:hover, .textp-2:hover, .textp-3:hover, .textp-4:hover, .textp-5:hover{
+
+  transition: 0.5s;
+  transform:  scale(1.05);
+  border-radius: 20px;
+
+}
+@media screen and (max-width:500px) {
+ *{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+  }
+ ul{
+   display: flex;
+   flex-direction: column;
+   width: 90%;
+  }
+ a{
+   font-size: 15px;
+  }
+
+ .logo{
+   display: flex;
+   width: 50%;
+  }
+  .container{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header"
+    "image-1"
+    "text-1"
+    "image-2"
+    "text-2"
+    "image-3"
+    "text-3"
+  }
+  
+  .image-1, .image-2,.image-3{
+  border-radius: 0%; 
+  }
+  .text-1, .text-2, .text-3{
+  margin: 30px;
+  }
+
+.containerserv{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100px;
+  grid-template-areas: 
+  "header"
+  "imgv-1"
+  "textv-1"
+  "imgpr-1"
+  "textpr-1"
+  "imge-1"
+  "texte-1"
+  }
+  .imgv-1, .imgpr-1, .imge-1{
+    display: grid;
+    padding-top: 0;
+    grid-template-rows: 100%;
+    border-radius: 0;
+    background-size:cover ;
+  }
+  .textv-1, .textpr-1, .texte-1{
+    margin: 30px;
+  }
+
+.containerp{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 30px;
+  grid-template-areas: 
+  "header"
+  "imagep-1"
+  "textp-1"
+  "imagep-2"
+  "textp-2"
+  "imagep-3"
+  "textp-3"
+  "imagep-4"
+  "textp-4"
+  "imagep-5"
+  "textp-5"
+  }
+  .imagep-1, .imagep-2, .imagep-3, .imagep-4, .imagep-5{
+    border-radius: 0%;
+    background-size: cover;
+    display: block;
+  }
+  .textp-1, .textp-2, .textp-3, .textp-4, .textp-5{
+    margin: 30px;
+  }
+  .text-h2{
+    font-size: 20px;
+   }
+  .text-p{
+    font-size: 15px;
+   }
+  .pfoot{
+    font-size: 10px;
+   }
+  iframe{
+    display: block;
+    height: 470px;
+    width: 270px;
+    border: 0;
+
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 690px) {
+  .logo{
+    display: none;
+  }
+  .container{
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: 100%;
+    grid-template-areas:
+    "header"
+    "image-1"
+    "text-1"
+    "image-2"
+    "text-2"
+    "image-3"
+    "text-3"
+  }
+ .image-1, .image-2,.image-3{
+  border-radius: 0%; 
+  }
+ .text-1, .text-2, .text-3{
+  margin: 50px;
+  }
+
+  .containerserv{
+   display: grid;
+   grid-template-columns: 100%;
+   grid-template-rows: 1%;
+   grid-template-areas: 
+   "header"
+   "imgv-1"
+   "textv-1"
+   "imgpr-1"
+   "textpr-1"
+   "imge-1"
+   "texte-1"
+  }
+  .imgv-1, .imgpr-1, .imge-1{
+    display: grid;
+    padding-top: 0;
+    grid-template-rows: 100%;
+    border-radius: 0;
+    background-size:cover ;
+  }
+  .textv-1, .textpr-1, .texte-1{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+
+  .containerp{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px;
+    grid-template-areas: 
+    "header"
+    "imagep-1"
+    "textp-1"
+    "imagep-2"
+    "textp-2"
+    "imagep-3"
+    "textp-3"
+    "imagep-4"
+    "textp-4"
+    "imagep-5"
+    "textp-5"
+  }
+  .imagep-1, .imagep-2, .imagep-3, .imagep-4, .imagep-5{
+    border-radius: 0%;
+    background-size: cover;
+    display: block;
+  }
+  .textp-1, .textp-2, .textp-3, .textp-4, .textp-5{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+  }
+  .text-h2{
+    font-size: 20px;
+   }
+  .text-p{
+    font-size: 15px;
+   }
+  .pfoot{
+    font-size: 10px;
+   }
+  iframe{
+    display: block;
+    height: 470px;
+    width: 270px;
+    border: 0;
+
+  }
+  
+}
+
+
