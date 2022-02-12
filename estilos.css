@@ -220,19 +220,19 @@ textarea{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50%;
+  border-radius: 10%;
   }
 
   .text-1 { grid-area: text-1;
     display: grid;
-    border-radius: 50%;
+    border-radius: 10%;
   
   }
 
   .text-2 { grid-area: text-2;
     display: grid;
     display: grid;
-   border-radius: 50%;
+   border-radius: 10%;
   }
 
   .image-2 { grid-area: image-2;
@@ -241,7 +241,7 @@ textarea{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50%;
+  border-radius: 10%;
   }
 
   .image-3 { grid-area: image-3;
@@ -250,12 +250,12 @@ textarea{
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  border-radius: 50%;
+  border-radius: 10%;
   }
 
   .text-3 { grid-area: text-3;
   display: grid;
-  border-radius: 50%;
+  border-radius: 10%;
   }
 
    .text-1:hover, .text-2:hover, .text-3:hover{
@@ -264,10 +264,17 @@ textarea{
    transform: scale(1.03);
    }
   .text-h2{
-   display: flex;
+     display: flex;
      justify-content: center;
      align-items: flex-end;
     }
+  .image-1:hover, .image-2:hover, .image-3:hover{
+
+      transform: rotate(360deg) scale(1.05);
+      transition: 2s;
+    
+    
+  }  
 
 .containerp {  display: grid;
     grid-template-columns: 1fr 1fr;
@@ -296,15 +303,14 @@ textarea{
   
   .textp-1 { grid-area: textp-1; 
     display: grid;
-    grid-template-rows: 15%;
-    margin-top: 100px;
+    grid-template-rows: 40%;
+    
 
   }
   
   .textp-2 { grid-area: textp-2;
     display: grid;
-    grid-template-rows: 15%;
-    margin-top: 100px;
+    grid-template-rows: 40%;
   }
   
   .imagep-2 { grid-area: imagep-2;
@@ -329,14 +335,13 @@ textarea{
   
   .textp-3 { grid-area: textp-3;
     display: grid;
-    grid-template-rows: 15%;
-    margin-top: 100px;
+    grid-template-rows: 40%;
+    
   }
   
   .textp-4 { grid-area: textp-4; 
     display: grid;
-    grid-template-rows: 15%;
-    margin-top: 100px;
+    grid-template-rows: 40%;
   }
   .imagep-4 { grid-area: imagep-4; 
     background-image: url(img/pic_golosinas.jpg);
@@ -358,15 +363,16 @@ textarea{
 
   .textp-5 { grid-area: textp-5;
     display: grid;
-    grid-template-rows: 15%;
-    margin-top: 100px;
+    grid-template-rows: 40%;
   }  
   
   .textp-1:hover, .textp-2:hover, .textp-3:hover, .textp-4:hover, .textp-5:hover{
 
-  transition: 0.5s;
+  transition: 1s;
   transform:  scale(1.05);
-  border-radius: 20px;
+  border-radius: 10px;
+  background-image: linear-gradient( whitesmoke, orange, whitesmoke);
+  border-radius: 40%;
 
 }
 @media screen and (max-width:500px) {
